@@ -337,16 +337,20 @@
   border-bottom-color: white;
 }
 
+/* Glow-safe wrapper: Do not set overflow hidden on ancestors or the glow will clip */
 .hero-form-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: visible;
 }
 
 .hero-quote-section {
   display: block;
   background: #fff;
-  padding: 3rem 0;
+  /* Padding buffer for glow effect - prevents clipping */
+  padding: calc(3rem + 24px) calc(0 + 24px);
+  overflow: visible;
 }
 
 .hero-form-card {
@@ -359,6 +363,9 @@
   max-height: calc(100svh - var(--header-height) - 2rem);
   display: flex;
   flex-direction: column;
+  /* Ensure shadows are not clipped */
+  position: relative;
+  overflow: visible;
 }
 
 .form-logo {
@@ -635,6 +642,10 @@ textarea.hero-form-input {
   .hero-form-container-desktop {
     display: flex;
     width: clamp(380px, 32vw, 520px);
+    /* Padding buffer for glow effect - prevents clipping */
+    padding: 24px;
+    margin: -24px;
+    overflow: visible;
   }
 
   .hero-quote-section {
@@ -1099,6 +1110,7 @@ textarea.hero-form-input {
     max-width: 100%;
     min-height: 520px;
     width: 100%;
+    overflow: visible;
   }
 
   .hero-form-label {
@@ -1173,17 +1185,26 @@ textarea.hero-form-input {
 
   .hero-quote-section {
     display: block;
-    padding: 0;
+    /* Padding buffer for glow effect - prevents clipping */
+    padding: calc(0 + 24px);
     scroll-margin-top: var(--header-height);
     min-height: 100svh;
     min-height: 100vh;
     display: flex;
     align-items: center;
+    overflow: visible;
   }
 
   .hero-form-container {
     padding: 0;
     width: 100%;
+    overflow: visible;
+  }
+
+  .hero-form-container-quote {
+    /* Padding buffer for glow effect - prevents clipping */
+    padding: 24px;
+    overflow: visible;
   }
 
   .hero-form {

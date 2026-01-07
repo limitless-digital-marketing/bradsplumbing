@@ -63,10 +63,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: visible;
 }
 
 main {
   flex: 1;
+  overflow: visible;
 }
 
 /* Typography */

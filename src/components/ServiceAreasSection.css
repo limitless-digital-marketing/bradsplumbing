@@ -9,23 +9,6 @@
 }
 
 .service-areas-layout {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.75rem;
-  align-items: stretch;
-}
-
-.service-areas-map-card {
-  border-radius: 0.9rem;
-  overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
-  min-height: 360px;
-  height: 100%;
-}
-
-.service-areas-map-card iframe {
-  width: 100%;
-  height: 100%;
   display: block;
 }
 
@@ -73,16 +56,7 @@
 
 @media (max-width: 1024px) {
   .service-areas-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .service-areas-content {
-    order: 1;
-  }
-
-  .service-areas-map-card {
-    order: 2;
-    min-height: 320px;
+    display: block;
   }
 }
 

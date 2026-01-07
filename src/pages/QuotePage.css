@@ -1,29 +1,47 @@
+/* Glow-safe wrapper: Do not set overflow hidden on ancestors or the glow will clip */
 .quote-page {
   min-height: 100svh;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3rem 1.5rem;
   background: #fff;
+  overflow: visible;
+  padding: 3rem 1.5rem;
+}
+
+/* Wrapper with padding buffer for glow effect - prevents shadow clipping */
+.quote-page-card-wrapper {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  /* Padding buffer for glow effect - prevents clipping */
+  padding: 24px;
+  overflow: visible;
 }
 
 .quote-page-card {
   width: 100%;
-  max-width: 760px;
-  margin: 0 auto;
-  max-height: calc(100svh - 3rem);
-  overflow: auto;
+  max-height: calc(100svh - 3rem - 48px);
+  /* Allow scrolling if content overflows */
+  overflow-y: auto;
+  /* Ensure shadows are not clipped */
+  position: relative;
 }
 
 /* Desktop: Centered container with proper spacing */
 @media (min-width: 769px) {
   .quote-page {
     padding: 3rem 1.5rem;
+    overflow: visible;
+  }
+
+  .quote-page-card-wrapper {
+    max-width: 760px;
   }
 
   .quote-page-card {
-    max-width: 760px;
+    max-width: 100%;
   }
 
   .quote-page-card.hero-form-card {
@@ -123,10 +141,17 @@
 @media (max-width: 768px) {
   .quote-page {
     padding: 1.5rem 0;
+    overflow: visible;
+  }
+
+  .quote-page-card-wrapper {
+    width: min(96vw, 560px);
+    padding: 24px;
   }
 
   .quote-page-card {
-    width: min(96vw, 560px);
+    width: 100%;
+    overflow-y: auto;
   }
 
   .quote-page-card .hero-form-row {
