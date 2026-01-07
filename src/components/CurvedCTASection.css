@@ -1,0 +1,85 @@
+.curved-cta {
+  position: relative;
+  background: #1b223f;
+  padding: 8rem 0;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(8, 12, 30, 0.55), rgba(8, 12, 30, 0.55)),
+    url('https://higgsfield.ai/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_34HRYPVsevnl96jSwrvZbaHm5v7%2Fd35d068f-7e6d-4233-bdb1-f3cde46e2e80.png&w=769&q=75');
+  background-size: cover;
+  background-position: center;
+}
+
+.curved-cta-content {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.curved-cta-content h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.curved-cta-content p {
+  margin: 0 0 2rem;
+  font-size: clamp(1.4rem, 2.8vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.curved-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  background: #8C7F5F;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #8C7F5F;
+  transition: all 0.2s ease;
+}
+
+.curved-cta-button:hover {
+  background: #7b6f53;
+  color: #fff;
+  border-color: #7b6f53;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+}
+
+
+@media (max-width: 1024px) {
+  .curved-cta {
+    padding: 6.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .curved-cta {
+    padding: 5.5rem 0;
+  }
+
+  .curved-cta-button {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media (max-width: 540px) {
+  .curved-cta {
+    padding: 3.5rem 0;
+  }
+}

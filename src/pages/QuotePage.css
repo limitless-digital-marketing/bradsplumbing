@@ -1,0 +1,135 @@
+.quote-page {
+  min-height: 100svh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: #fff;
+}
+
+.quote-page-card {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  max-height: calc(100svh - 3rem);
+  overflow: auto;
+}
+
+/* Desktop: Centered container with proper spacing */
+@media (min-width: 769px) {
+  .quote-page {
+    padding: 3rem 1.5rem;
+  }
+
+  .quote-page-card {
+    max-width: 760px;
+  }
+
+  .quote-page-card.hero-form-card {
+    padding: 2rem;
+    max-width: 760px;
+    width: 100%;
+  }
+
+  .quote-page-card .form-logo {
+    margin-bottom: 1rem;
+    max-width: 140px;
+  }
+
+  .quote-page-card .hero-form-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  .quote-page-card .hero-form {
+    gap: 1.125rem;
+  }
+
+  .quote-page-card .hero-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .quote-page-card .hero-form-group {
+    margin-bottom: 0;
+  }
+
+  .quote-page-card .hero-form-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .quote-page-card .hero-form-input {
+    height: 52px;
+    padding: 0 16px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    font-size: 16px;
+    width: 100%;
+    background: #ffffff;
+    color: #1b223f;
+  }
+
+  .quote-page-card .hero-form-input::placeholder {
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  .quote-page-card .hero-form-input:focus {
+    outline: none;
+    border-color: #8C7F5F;
+    box-shadow: 0 0 0 3px rgba(140, 127, 95, 0.35);
+  }
+
+  .quote-page-card select.hero-form-input {
+    padding-right: 44px;
+    cursor: pointer;
+  }
+
+  .quote-page-card textarea.hero-form-input {
+    min-height: 140px;
+    padding: 14px 16px;
+    height: auto;
+    line-height: 1.5;
+  }
+
+  .quote-page-card .btn-block {
+    margin-top: 0.5rem;
+    height: 56px;
+    border-radius: 14px;
+    font-weight: 800;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .quote-page-card .btn-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+  }
+
+  .quote-page-card .btn-block:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(140, 127, 95, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-page {
+    padding: 1.5rem 0;
+  }
+
+  .quote-page-card {
+    width: min(96vw, 560px);
+  }
+
+  .quote-page-card .hero-form-row {
+    grid-template-columns: 1fr;
+  }
+}
