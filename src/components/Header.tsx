@@ -12,10 +12,6 @@ const Header = () => {
   const location = useLocation()
   const navRef = useRef<HTMLElement | null>(null)
 
-  const handlePlaceholderClick = (event: React.MouseEvent) => {
-    event.preventDefault()
-  }
-
   const closeOpenMenus = useCallback(() => {
     setMenuOpen(false)
     setServicesOpen(false)
