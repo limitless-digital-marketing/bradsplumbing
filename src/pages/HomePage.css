@@ -22,6 +22,17 @@
   --form-button-height: clamp(44px, 6vh, 56px);
 }
 
+.hero-mobile-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -63,12 +74,12 @@
 
 @media (max-width: 768px) {
   .hero {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)),
-      url("/Images/home-hero-mobile.png");
-    background-size: cover;
-    background-position: 65% center;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75));
     padding: calc(var(--header-height) + 1.5rem) 0 2.5rem;
+  }
+
+  .hero-mobile-image {
+    display: block;
   }
 
   .hero h1 {
@@ -623,6 +634,10 @@ textarea.hero-form-input {
     background-size: cover;
     background-position: left center;
     background-repeat: no-repeat;
+  }
+
+  .hero-mobile-image {
+    display: none;
   }
 
   .hero-grid {

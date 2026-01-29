@@ -64,6 +64,12 @@ const HomePage = () => {
     <div className="homepage">
       {/* Hero Section */}
       <section className="hero">
+        <img
+          src="/Images/home-hero-mobile.png"
+          alt=""
+          className="hero-mobile-image"
+          aria-hidden="true"
+        />
         <div className="container">
           <div className="hero-grid">
             {/* Left Column - Headline & Value Prop */}

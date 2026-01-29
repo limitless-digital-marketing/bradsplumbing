@@ -1,14 +1,19 @@
 import { useState } from 'react'
 
+const LEAD_ENDPOINT = 'https://www.buildwithlimitless.com/api/new-lead'
+const CLIENT_ID = '1dad215f-fde7-41b0-b249-db58223eeb22'
+
 const HeroQuoteForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    service: '',
-    message: ''
+    message: '',
+    hp: ''
   })
 
   const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -17,14 +22,55 @@ const HeroQuoteForm = () => {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Hero form submitted:', formData)
-    setSubmitted(true)
-    setTimeout(() => {
-      setSubmitted(false)
-      setFormData({ name: '', phone: '', service: '', message: '' })
-    }, 3000)
+    setSubmitting(true)
+    setError(null)
+
+    const url = new URL(window.location.href)
+    const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content']
+    const utmData = utmParams.reduce<Record<string, string>>((acc, key) => {
+      const value = url.searchParams.get(key)
+      if (value) acc[key] = value
+      return acc
+    }, {})
+
+    const messageParts = []
+    if (formData.message) messageParts.push(formData.message)
+
+    const payload = {
+      client_id: CLIENT_ID,
+      full_name: formData.name,
+      phone: formData.phone,
+      message: messageParts.length ? messageParts.join('\n') : undefined,
+      source_url: url.href,
+      hp: formData.hp || '',
+      ...utmData
+    }
+
+    try {
+      const response = await fetch(LEAD_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+
+      if (!response.ok) {
+        throw new Error('Lead submission failed')
+      }
+
+      setSubmitted(true)
+      setTimeout(() => {
+        setSubmitted(false)
+        setFormData({ name: '', phone: '', message: '', hp: '' })
+      }, 3000)
+    } catch (err) {
+      setError('Something went wrong. Please try again or call us directly.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   if (submitted) {
@@ -71,26 +117,17 @@ const HeroQuoteForm = () => {
         </div>
       </div>
 
-      <div className="hero-form-group">
-        <label className="hero-form-label" htmlFor="hero-service">
-          What service do you need?
-        </label>
-        <select
-          name="service"
-          required
-          id="hero-service"
-          value={formData.service}
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <label htmlFor="hero-hp">HP</label>
+        <input
+          type="text"
+          id="hero-hp"
+          name="hp"
+          value={formData.hp}
           onChange={handleChange}
-          className="hero-form-input"
-        >
-          <option value="">What do you need? *</option>
-          <option value="emergency">Emergency Plumbing</option>
-          <option value="blocked-drains">Blocked Drains</option>
-          <option value="hot-water">Hot Water System</option>
-          <option value="leak">Leak Detection</option>
-          <option value="general">General Plumbing</option>
-          <option value="other">Other</option>
-        </select>
+          tabIndex={-1}
+          autoComplete="off"
+        />
       </div>
 
       <div className="hero-form-group">
@@ -108,8 +145,10 @@ const HeroQuoteForm = () => {
         />
       </div>
 
+      {error && <p className="hero-form-error">{error}</p>}
+
       <button type="submit" className="btn btn-primary btn-block">
-        GET FREE QUOTE
+        {submitting ? 'SENDING...' : 'GET FREE QUOTE'}
       </button>
     </form>
   )

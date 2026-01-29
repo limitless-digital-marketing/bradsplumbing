@@ -4,8 +4,8 @@
   padding: 8rem 0;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(rgba(8, 12, 30, 0.55), rgba(8, 12, 30, 0.55)),
-    url('https://higgsfield.ai/_next/image?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_34HRYPVsevnl96jSwrvZbaHm5v7%2Fd35d068f-7e6d-4233-bdb1-f3cde46e2e80.png&w=769&q=75');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url('/Images/ec900c99793f50b69dc76672c4c1d69e2638576e-1600x1066.jpg');
   background-size: cover;
   background-position: center;
 }
