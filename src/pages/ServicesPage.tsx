@@ -12,10 +12,10 @@ const ServicesPage = () => {
       <section className="service-hero services-hero">
         <div className="container service-hero-container">
           <div className="service-hero-tag">Services</div>
-          <h1 className="service-hero-title">All Plumbing Services</h1>
+          <h1 className="service-hero-title">Plumbing &amp; Gasfitting Services</h1>
           <p className="service-hero-subtitle">
-            Licensed, reliable plumbing support for homes and businesses across Sydney. Explore the full list of
-            services below.
+            Domestic plumbing and gasfitting maintenance for all types of dwellings. Explore the full list of services
+            below.
           </p>
           <Link className="service-hero-cta" to="/get-quote">
             GET FREE QUOTE

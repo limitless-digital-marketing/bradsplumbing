@@ -1,12 +1,13 @@
 import { useState } from 'react'
 
 const LEAD_ENDPOINT = 'https://www.buildwithlimitless.com/api/new-lead'
-const CLIENT_ID = '1dad215f-fde7-41b0-b249-db58223eeb22'
+const CLIENT_ID = 'd3553ace-cbd5-4af6-b3be-b5fb1610197c'
 
 const HeroQuoteForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    email: '',
     message: '',
     hp: ''
   })
@@ -42,6 +43,7 @@ const HeroQuoteForm = () => {
       client_id: CLIENT_ID,
       full_name: formData.name,
       phone: formData.phone,
+      email: formData.email,
       message: messageParts.length ? messageParts.join('\n') : undefined,
       source_url: url.href,
       hp: formData.hp || '',
@@ -64,7 +66,7 @@ const HeroQuoteForm = () => {
       setSubmitted(true)
       setTimeout(() => {
         setSubmitted(false)
-        setFormData({ name: '', phone: '', message: '', hp: '' })
+        setFormData({ name: '', phone: '', email: '', message: '', hp: '' })
       }, 3000)
     } catch (err) {
       setError('Something went wrong. Please try again or call us directly.')
@@ -115,6 +117,22 @@ const HeroQuoteForm = () => {
             className="hero-form-input"
           />
         </div>
+      </div>
+
+      <div className="hero-form-group">
+        <label className="hero-form-label" htmlFor="hero-email">
+          Email
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="hero-email"
+          placeholder="your.email@example.com *"
+          required
+          value={formData.email}
+          onChange={handleChange}
+          className="hero-form-input"
+        />
       </div>
 
       <div style={{ display: 'none' }} aria-hidden="true">

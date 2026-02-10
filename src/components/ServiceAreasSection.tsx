@@ -9,7 +9,7 @@ const ServiceAreasSection = () => {
           <div className="service-areas-content">
             <h2>
               PROUDLY SERVING
-              <span>THESE AREAS</span>
+              <span>LOCAL AREAS</span>
             </h2>
             <div className="service-areas-list">
               {serviceAreas.map((area) => (

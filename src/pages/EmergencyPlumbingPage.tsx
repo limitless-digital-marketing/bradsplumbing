@@ -10,9 +10,9 @@ const EmergencyPlumbingPage = () => {
       <section className="service-hero">
         <div className="container service-hero-container">
           <div className="service-hero-tag">Services</div>
-          <h1 className="service-hero-title">Emergency Plumbing</h1>
+          <h1 className="service-hero-title">Domestic Maintenance</h1>
           <p className="service-hero-subtitle">
-            Fast response, upfront pricing, and expert repairs for urgent plumbing issues across Sydney.
+            Plumbing and gasfitting maintenance for all types of dwellings, from renovations to repairs.
           </p>
           <Link className="service-hero-cta" to="/get-quote">
             GET FREE QUOTE
@@ -22,17 +22,15 @@ const EmergencyPlumbingPage = () => {
 
       <section className="service-content">
         <div className="container service-content-container">
-          <h2>Emergency Help When It Matters Most</h2>
+          <h2>Reliable Domestic Plumbing &amp; Gasfitting</h2>
           <p>
-            When a pipe bursts or a leak won’t wait, you need a plumber who can respond quickly and fix the problem
-            properly. Our emergency team is on call to handle urgent repairs, blocked drains, overflowing toilets,
-            and sudden water heater failures. We arrive with the right tools to diagnose the issue and deliver a
-            reliable fix the first time.
+            We handle renovations, general maintenance, drain cleaning, tap and toilet repairs, outdoor plumbing, and
+            pipe and leak repairs. Our team arrives on time, assesses the issue thoroughly, and explains the best path
+            forward before any work begins.
           </p>
           <p>
-            Every emergency job is handled with clear communication and transparent pricing. We’ll explain what’s
-            happening, what needs to be done, and how long it will take before any work begins. From apartment
-            emergencies to commercial sites, you can expect clean workmanship and minimal disruption.
+            We also install and repair electric, gas, and heat pump hot water systems, along with storm water repairs
+            and installations. Note: we do not service solar hot water systems.
           </p>
         </div>
       </section>

@@ -1,6 +1,6 @@
-# Crossroads Plumbing Website
+# Brads Plumbing & Gasfitting Website
 
-A modern, conversion-focused website for Crossroads Plumbing.
+A modern, conversion-focused website for Brads Plumbing & Gasfitting.
 
 ## Development
 
@@ -19,4 +19,3 @@ npm run build
 
 - **Core Pages**: Homepage, Contact, Quote, Blog, Main Service Pages
 - **SEO Pages**: Service and location-based pages using reusable templates
-

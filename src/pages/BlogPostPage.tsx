@@ -15,7 +15,7 @@ const BlogPostPage = () => {
         <div className="container blog-post-hero-container">
           <div className="blog-post-tag">Blog</div>
           <h1 className="blog-post-title">{post?.title ?? 'Plumbing Advice'}</h1>
-          <p className="blog-post-meta">{post?.date ?? 'Crossroads Plumbing'}</p>
+          <p className="blog-post-meta">{post?.date ?? 'Brads Plumbing & Gasfitting'}</p>
         </div>
       </section>
 

@@ -27,8 +27,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(140, 127, 95, 0.2);
-  border: 1px solid rgba(140, 127, 95, 0.4);
+  background: rgba(31, 111, 166, 0.2);
+  border: 1px solid rgba(31, 111, 166, 0.4);
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -63,23 +63,23 @@
   justify-content: center;
   padding: 1rem 2rem;
   border-radius: 0.6rem;
-  background: #8C7F5F;
+  background: var(--cta);
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #8C7F5F;
+  border: 2px solid var(--cta);
   transition: all 0.2s ease;
 }
 
 .service-hero-cta:hover {
-  background: #7b6f53;
+  background: var(--cta-dark);
   color: #fff;
-  border-color: #7b6f53;
+  border-color: var(--cta-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+  box-shadow: 0 8px 16px var(--cta-shadow);
 }
 
 .service-content {
@@ -95,7 +95,7 @@
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #1b223f;
+  color: #0b2a47;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }

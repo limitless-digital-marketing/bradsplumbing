@@ -139,8 +139,8 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="logo">
             <img
-              src="https://images.squarespace-cdn.com/content/v1/64a4f0a6f2c81b7f74e2c456/f64df7bc-a0a4-4809-9ce2-3b31929200c2/crossroads-plumbing-logo-black.png?format=1500w"
-              alt="Crossroads Plumbing"
+              src="/Images/brads-plumbing-logo.png"
+              alt="Brads Plumbing & Gasfitting"
               className="logo-image"
             />
           </Link>
@@ -229,11 +229,11 @@ const Header = () => {
               <Link className="mobile-nav-cta-primary" to="/get-quote" onClick={handleNavLinkClick}>
                 GET FREE QUOTE
               </Link>
-              <a className="mobile-nav-cta-secondary" href="tel:0447302071" onClick={handleNavLinkClick}>
+              <a className="mobile-nav-cta-secondary" href="tel:0438792102" onClick={handleNavLinkClick}>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                0447 302 071
+                0438 792 102
               </a>
             </div>
           </nav>
@@ -242,24 +242,24 @@ const Header = () => {
             <Link className="btn-quote" to="/get-quote">
               GET FREE QUOTE
             </Link>
-            <button className="btn-phone" type="button">
+            <a className="btn-phone" href="tel:0438792102" aria-label="Call 0438 792 102">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              0447 302 071
-            </button>
+              0438 792 102
+            </a>
           </div>
 
           <div className="header-actions-mobile-group">
             <a
-              href="tel:0447302071"
+              href="tel:0438792102"
               className="btn-call-mobile"
-              aria-label="Call 0447 302 071"
+              aria-label="Call 0438 792 102"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>Call Us</span>
+              <span>Call Now</span>
             </a>
 
             <button

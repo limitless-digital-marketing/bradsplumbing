@@ -1,6 +1,6 @@
 /* FAQ Section */
 .faq-section {
-  background: #231F20;
+  background: #081a2b;
   padding: var(--spacing-2xl) 0;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -18,8 +18,8 @@
   align-items: center;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  background: rgba(140, 127, 95, 0.2);
-  border: 1px solid rgba(140, 127, 95, 0.4);
+  background: rgba(31, 111, 166, 0.2);
+  border: 1px solid rgba(31, 111, 166, 0.4);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;

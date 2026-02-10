@@ -55,6 +55,14 @@
     max-width: 140px;
   }
 
+  .quote-page-card .form-logo-text {
+    max-width: none;
+  }
+
+  .quote-page-card .form-logo-text span {
+    font-size: 1.6rem;
+  }
+
   .quote-page-card .hero-form-title {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
@@ -93,7 +101,7 @@
     font-size: 16px;
     width: 100%;
     background: #ffffff;
-    color: #1b223f;
+    color: #0b2a47;
   }
 
   .quote-page-card .hero-form-input::placeholder {
@@ -102,8 +110,8 @@
 
   .quote-page-card .hero-form-input:focus {
     outline: none;
-    border-color: #8C7F5F;
-    box-shadow: 0 0 0 3px rgba(140, 127, 95, 0.35);
+    border-color: #1f6fa6;
+    box-shadow: 0 0 0 3px rgba(31, 111, 166, 0.35);
   }
 
   .quote-page-card select.hero-form-input {
@@ -129,12 +137,12 @@
 
   .quote-page-card .btn-block:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+    box-shadow: 0 8px 16px rgba(31, 111, 166, 0.3);
   }
 
   .quote-page-card .btn-block:active {
     transform: translateY(0);
-    box-shadow: 0 4px 8px rgba(140, 127, 95, 0.2);
+    box-shadow: 0 4px 8px rgba(31, 111, 166, 0.2);
   }
 }
 

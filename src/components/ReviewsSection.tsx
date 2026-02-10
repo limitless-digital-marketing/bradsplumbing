@@ -19,45 +19,66 @@ const ReviewsSection = () => {
   const reviews: Review[] = [
     {
       id: 1,
-      name: 'Sarah Mitchell',
-      date: '2 weeks ago',
+      name: 'Angie (Rosebud)',
+      date: 'Recent',
       rating: 5,
-      text: 'Tom and his team did an excellent job fixing our burst pipe emergency. They arrived within an hour of my call and had everything sorted quickly. Professional service and fair pricing. Highly recommend!'
+      text: 'Brad and Tyler were brilliant. They were helpful with every question, went above and beyond, and the communication was great. The service putting in our new tap was prompt and professional. I highly recommend Brads Plumbing. Great job guys and thank you so much.'
     },
     {
       id: 2,
-      name: 'David Chen',
-      date: '1 month ago',
+      name: 'Local Customer',
+      date: 'Recent',
       rating: 5,
-      text: 'Outstanding service from start to finish. Crossroads Plumbing installed our new hot water system and the work was completed to a very high standard. The team was punctual, clean, and respectful of our home.'
+      text: 'We had Brad out to service our gas wall heater and couldn’t be happier. He was on time, very personable, incredibly thorough, and explained everything as he went. Great to have a local all-in-one plumber.'
     },
     {
       id: 3,
-      name: 'Emma Thompson',
-      date: '3 weeks ago',
+      name: 'Happy Client',
+      date: 'Recent',
       rating: 5,
-      text: 'Called them for a blocked drain issue and they came out the same day. The plumber was friendly, explained everything clearly, and fixed the problem efficiently. Great value for money.'
+      text: 'Brad did an excellent job. He provided great service and offered solutions that saved us a lot of money. Would not hesitate to recommend. Thanks again Brad.'
     },
     {
       id: 4,
-      name: 'Michael Roberts',
-      date: '2 months ago',
+      name: 'Holiday Home Owner',
+      date: 'Recent',
       rating: 5,
-      text: 'We\'ve used Crossroads Plumbing several times now for various jobs around our property. Always reliable, always professional, and they stand behind their work. They\'re now our go-to plumber.'
+      text: 'Holiday home requiring a new hot water system. Owners couldn’t attend to supervise installation. Brads Plumbing & Gasfitting organised everything, including the unit, installation, and other trades. Brad and Jacqui kept me informed throughout. Completely trustworthy.'
     },
     {
       id: 5,
-      name: 'Jessica Park',
-      date: '3 weeks ago',
+      name: 'Local Resident',
+      date: 'Recent',
       rating: 5,
-      text: 'Fantastic experience with Crossroads Plumbing. They helped us with a complicated leak detection issue and found the problem quickly using their advanced equipment. Saved us thousands in potential damage.'
+      text: 'Honest, reliable, and great work ethic. I would highly recommend Brad. If I could give ten stars, I would.'
     },
     {
       id: 6,
-      name: 'Andrew Wilson',
-      date: '1 week ago',
+      name: 'Happy Customer',
+      date: 'Recent',
       rating: 5,
-      text: 'Top-notch service! Tom was professional, knowledgeable, and went above and beyond to ensure we were happy with the work. Definitely recommend to anyone needing plumbing services in Sydney.'
+      text: 'Fantastic, prompt service and very easy to deal with.'
+    },
+    {
+      id: 7,
+      name: 'Repeat Client',
+      date: 'Recent',
+      rating: 5,
+      text: 'Work was excellent. Friendly. On time.'
+    },
+    {
+      id: 8,
+      name: 'Local Homeowner',
+      date: 'Recent',
+      rating: 5,
+      text: 'Brad was prompt, tidy, and explained the fix clearly. Great service and would use again.'
+    },
+    {
+      id: 9,
+      name: 'Satisfied Customer',
+      date: 'Recent',
+      rating: 5,
+      text: 'Quick response, quality workmanship, and fair pricing. Highly recommend Brads Plumbing & Gasfitting.'
     }
   ]
 
@@ -69,7 +90,7 @@ const ReviewsSection = () => {
         width="16"
         height="16"
         viewBox="0 0 24 24"
-        fill={index < rating ? '#FBBC04' : '#E8EAED'}
+        fill={index < rating ? '#F2C230' : '#C6D5E6'}
         stroke="none"
       >
         <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -155,12 +176,12 @@ const ReviewsSection = () => {
             <h2 className="reviews-title">CUSTOMER REVIEWS</h2>
             <span className="reviews-midline" aria-hidden="true"></span>
             <a
-              href="https://www.google.com/search?q=cross+roads+plumbing&oq=cross+ro&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MhIIARAAGAoYgwEYsQMYyQMYgAQyBggCEEUYOTINCAMQABiSAxiABBiKBTIHCAQQLhiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI3MDdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0xa263822490dcf841:0x6916f708015accbc,1,,,,"
+              href="https://www.google.com/search?q=brads+plumbing+and+gasfitting&oq=brads+plumbing+and+gasfitting&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRigATIHCAQQIRigATIHCAUQIRiPAjIHCAYQIRiPAtIBCDgyMDBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x6ad5c9f13374e661:0x3491450f8a0ffc70,1,,,,"
               target="_blank"
               rel="noopener noreferrer"
               className="reviews-cta-button"
             >
-              LEAVE US A REVIEW
+              LEAVE A REVIEW
             </a>
           </div>
         </div>
@@ -207,15 +228,6 @@ const ReviewsSection = () => {
                         </div>
                         <div className="review-rating">{renderStars(review.rating)}</div>
                         <p className="review-text">{review.text}</p>
-                        <div className="review-source">
-                          <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
-                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
-                          </svg>
-                          <span>Google Review</span>
-                        </div>
                       </div>
                     ))}
                 </div>
@@ -256,7 +268,7 @@ const ReviewsSection = () => {
             rel="noopener noreferrer"
             className="reviews-cta-button"
           >
-            LEAVE US A REVIEW
+            LEAVE A REVIEW
           </a>
         </div>
 

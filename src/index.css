@@ -5,22 +5,27 @@
 }
 
 :root {
-  /* Elegant Taupe/Brown Color Palette */
-  --primary: #8b7e6a;
-  --primary-dark: #6b5d4f;
-  --primary-light: #a39582;
-  --secondary: #8b7e6a;
-  --accent: #6b5d4f;
-  --text-dark: #2d2a26;
-  --text-medium: #5a5347;
-  --text-light: #7a6f5d;
+  /* Brand Palette (from logo) */
+  --primary: #1f6fa6;
+  --primary-dark: #0f4d7a;
+  --primary-light: #4aa3e0;
+  --secondary: #081a2b;
+  --accent: #0b2a47;
+  --text-dark: #0b0f14;
+  --text-medium: #243246;
+  --text-light: #52657a;
   --bg-white: #ffffff;
-  --bg-light: #f5f3f0;
-  --bg-taupe: #d4c9b8;
-  --bg-gray: #e8e4df;
-  --border: #d4c9b8;
-  --success: #8b7e6a;
+  --bg-light: #f3f7fb;
+  --bg-taupe: #e1e7f0;
+  --bg-gray: #e6edf6;
+  --border: #c6d5e6;
+  --success: #1f6fa6;
   --error: #c74444;
+  --bg-dark: #081a2b;
+  --bg-darker: #0b0f14;
+  --cta: #4aa3e0;
+  --cta-dark: #1f6fa6;
+  --cta-shadow: rgba(74, 163, 224, 0.35);
   
   /* Typography */
   --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -120,7 +125,7 @@ a:hover {
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
-  border: 2px solid #8C7F5F;
+  border: 2px solid var(--cta);
   border-radius: 0.6rem;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -129,17 +134,17 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: #8C7F5F;
+  background-color: var(--cta);
   color: white;
-  border-color: #8C7F5F;
+  border-color: var(--cta);
 }
 
 .btn-primary:hover {
-  background-color: #7b6f53;
+  background-color: var(--cta-dark);
   color: white;
-  border-color: #7b6f53;
+  border-color: var(--cta-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+  box-shadow: 0 8px 16px var(--cta-shadow);
 }
 
 .btn-secondary {

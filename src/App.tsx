@@ -3,7 +3,6 @@ import { useLayoutEffect } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
-import EmergencyPlumbingPage from './pages/EmergencyPlumbingPage'
 import ServiceAreaPage from './pages/ServiceAreaPage'
 import ServiceDetailPage from './pages/ServiceDetailPage'
 import ServicesPage from './pages/ServicesPage'
@@ -31,7 +30,6 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/emergency-plumbing" element={<EmergencyPlumbingPage />} />
           <Route path="/services/:serviceSlug" element={<ServiceDetailPage />} />
           <Route path="/service-areas/:areaSlug" element={<ServiceAreaPage />} />
           <Route path="/blog" element={<BlogPage />} />

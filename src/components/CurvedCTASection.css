@@ -1,6 +1,6 @@
 .curved-cta {
   position: relative;
-  background: #1b223f;
+  background: #0b2a47;
   padding: 8rem 0;
   text-align: center;
   color: #fff;
@@ -41,23 +41,23 @@
   justify-content: center;
   padding: 1rem 2rem;
   border-radius: 0.6rem;
-  background: #8C7F5F;
+  background: var(--cta);
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #8C7F5F;
+  border: 2px solid var(--cta);
   transition: all 0.2s ease;
 }
 
 .curved-cta-button:hover {
-  background: #7b6f53;
+  background: var(--cta-dark);
   color: #fff;
-  border-color: #7b6f53;
+  border-color: var(--cta-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+  box-shadow: 0 8px 16px var(--cta-shadow);
 }
 
 

@@ -27,8 +27,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(140, 127, 95, 0.2);
-  border: 1px solid rgba(140, 127, 95, 0.4);
+  background: rgba(31, 111, 166, 0.2);
+  border: 1px solid rgba(31, 111, 166, 0.4);
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -63,14 +63,14 @@
   justify-content: center;
   padding: 1rem 2rem;
   border-radius: 0.6rem;
-  background: #8C7F5F;
+  background: var(--cta);
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
-  border: 2px solid #8C7F5F;
+  border: 2px solid var(--cta);
   gap: 0.75rem;
   transition: all 0.2s ease;
 }
@@ -79,11 +79,11 @@
 .blog-hero-cta:active,
 .blog-hero-cta:visited,
 .blog-hero-cta:focus {
-  background: #8C7F5F;
+  background: var(--cta-dark);
   color: #fff;
-  border-color: #8C7F5F;
+  border-color: var(--cta-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+  box-shadow: 0 8px 16px var(--cta-shadow);
 }
 
 .blog-hero-cta-arrow {
@@ -107,7 +107,7 @@
 
 .blog-listing {
   padding: 4.5rem 0 5rem;
-  background: #f6f7fb;
+  background: #f3f6fb;
 }
 
 .blog-listing-container {
@@ -131,7 +131,7 @@
 .blog-listing-title {
   font-size: clamp(2.2rem, 3.6vw, 3.1rem);
   font-weight: 900;
-  color: #1b223f;
+  color: #0b2a47;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin: 0;
@@ -190,7 +190,7 @@
 
 .blog-card-body h3 {
   font-size: 1.3rem;
-  color: #1b223f;
+  color: #0b2a47;
   margin: 0;
 }
 
@@ -203,8 +203,8 @@
 .blog-card-link {
   margin-top: auto;
   align-self: flex-start;
-  background: #8C7F5F;
-  border: 2px solid #8C7F5F;
+  background: var(--cta);
+  border: 2px solid var(--cta);
   border-radius: 0.6rem;
   color: #fff;
   font-weight: 700;
@@ -222,11 +222,11 @@
 .blog-card-link:active,
 .blog-card-link:visited,
 .blog-card-link:focus {
-  background: #7b6f53;
+  background: var(--cta-dark);
   color: #fff !important;
-  border-color: #7b6f53;
+  border-color: var(--cta-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+  box-shadow: 0 8px 16px var(--cta-shadow);
 }
 
 @media (max-width: 1024px) {

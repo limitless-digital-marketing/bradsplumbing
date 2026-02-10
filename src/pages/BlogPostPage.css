@@ -26,8 +26,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(140, 127, 95, 0.2);
-  border: 1px solid rgba(140, 127, 95, 0.4);
+  background: rgba(31, 111, 166, 0.2);
+  border: 1px solid rgba(31, 111, 166, 0.4);
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -59,7 +59,7 @@
 
 .blog-post-body {
   padding: 4.5rem 0 5rem;
-  background: #f6f7fb;
+  background: #f3f6fb;
 }
 
 .blog-post-body-container {
@@ -89,7 +89,7 @@
 }
 
 .blog-post-back {
-  color: #1b223f;
+  color: #0b2a47;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;

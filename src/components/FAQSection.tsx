@@ -13,33 +13,33 @@ const FAQSection = () => {
   const faqs: FAQItem[] = [
     {
       id: 1,
-      question: 'What areas do you service?',
-      answer: 'We provide plumbing services throughout Sydney\'s North Shore and surrounding areas, including Killara, Lindfield, Roseville, Gordon, Pymble, Turramurra, Wahroonga, Hornsby, Chatswood, Willoughby, Ryde, and Gladesville. If you\'re unsure whether we service your area, please give us a call and we\'ll be happy to help.'
+      question: 'What types of properties do you service?',
+      answer: 'We provide domestic plumbing and gasfitting maintenance for all types of dwellings, from apartments to family homes and multi-dwelling residences.'
     },
     {
       id: 2,
-      question: 'Do you offer emergency plumbing services?',
-      answer: 'Yes! We offer 24/7 emergency plumbing services for urgent issues like burst pipes, gas leaks, blocked sewers, and no hot water. Our team responds quickly to minimize damage and get your plumbing system back to normal as soon as possible.'
+      question: 'Do you handle renovations?',
+      answer: 'Yes. We cover plumbing and gasfitting work for bathroom, kitchen, and laundry renovations, including fixture installations and pipework updates.'
     },
     {
       id: 3,
-      question: 'Are you licensed and insured?',
-      answer: 'Absolutely. We are fully licensed (Licence No. 397372C) and insured plumbing professionals. All our work complies with Australian plumbing standards and regulations, giving you complete peace of mind.'
+      question: 'What hot water systems do you service?',
+      answer: 'We install and repair electric, gas, and heat pump hot water systems. We do not service solar hot water systems.'
     },
     {
       id: 4,
-      question: 'How much do your services cost?',
-      answer: 'We believe in transparent, upfront pricing. The cost depends on the specific job, but we always provide a clear quote before starting any work. There are no hidden fees or surprise charges. Contact us for a free, no-obligation quote.'
+      question: 'Do you clear drains and sewer blockages?',
+      answer: 'Yes. We handle drain cleaning, sewer blockages, and repairs to restore flow and keep your system working properly.'
     },
     {
       id: 5,
-      question: 'How quickly can you get to me?',
-      answer: 'For emergency situations, we aim to arrive as quickly as possible, often within an hour of your call. For scheduled appointments, we offer same-day or next-day service in most cases. We understand that plumbing issues need prompt attention.'
+      question: 'Do you provide tap, toilet, and shower repairs?',
+      answer: 'Yes. We repair and install taps, toilets, and showers, including leaks, running cisterns, and faulty fittings.'
     },
     {
       id: 6,
-      question: 'Do you provide warranties on your work?',
-      answer: 'Yes, we stand behind all our work with comprehensive warranties. The specific warranty depends on the type of work performed, but we always ensure you\'re protected and satisfied with the results. We also provide ongoing support if you have any concerns.'
+      question: 'How do I request a quote?',
+      answer: 'Call us or submit a request through the quote form and we\'ll get back to you with clear options and pricing.'
     }
   ]
 

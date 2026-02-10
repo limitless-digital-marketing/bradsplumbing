@@ -47,13 +47,14 @@ const ServiceDetailPage = () => {
           <h2>{service.name}</h2>
           <p>{service.content}</p>
           <p>
-            Our licensed team arrives on time, assesses the issue thoroughly, and explains the best path forward before
-            any work begins. We use quality materials and proven techniques to deliver repairs that last, with tidy
-            workmanship and clear communication at every step.
+            Our team arrives on time, assesses the issue thoroughly, and explains the best path forward before any work
+            begins. We use quality materials and proven techniques to deliver repairs that last, with tidy workmanship
+            and clear communication at every step.
           </p>
           <p>
-            From quick fixes to more involved solutions, Crossroads Plumbing tailors every {service.name.toLowerCase()}{' '}
-            job to the needs of your property. If you are unsure what is causing the problem, we will diagnose it and
+            From quick fixes to more involved solutions, Brads Plumbing &amp; Gasfitting tailors every{' '}
+            {service.name.toLowerCase()} job to the needs of your property. If you are unsure what is causing the
+            problem, we will diagnose it and
             provide honest recommendations so you can make the right call with confidence.
           </p>
         </div>

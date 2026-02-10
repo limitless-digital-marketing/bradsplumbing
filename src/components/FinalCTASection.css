@@ -35,9 +35,9 @@
 }
 
 .final-cta-section .btn {
-  background: #8C7F5F;
+  background: var(--cta);
   color: white;
-  border: 2px solid #8C7F5F;
+  border: 2px solid var(--cta);
   font-size: 1rem;
   font-weight: 700;
   padding: 1rem 2rem;
@@ -45,11 +45,11 @@
 }
 
 .final-cta-section .btn:hover {
-  background: #7b6f53;
+  background: var(--cta-dark);
   color: white;
-  border-color: #7b6f53;
+  border-color: var(--cta-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(140, 127, 95, 0.3);
+  box-shadow: 0 8px 16px var(--cta-shadow);
 }
 
 /* Responsive */
@@ -87,4 +87,3 @@
     padding: 1rem;
   }
 }
-
