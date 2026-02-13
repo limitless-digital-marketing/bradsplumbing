@@ -100,8 +100,8 @@
   .hero-badge {
     justify-content: center;
     margin-bottom: 1rem;
-    background: rgba(31, 111, 166, 0.2);
-    border: 1px solid rgba(31, 111, 166, 0.4);
+    background: rgba(42, 121, 135, 0.2);
+    border: 1px solid rgba(42, 121, 135, 0.4);
     padding: 0.4rem 0.9rem;
     border-radius: 999px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -480,7 +480,7 @@
   line-height: normal;
   transition: all 0.2s ease;
   background: #ffffff;
-  color: #0b2a47;
+  color: #2A7987;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -490,8 +490,8 @@
 
 .hero-form-input:focus {
   outline: none;
-  border-color: #1f6fa6;
-  box-shadow: 0 0 0 3px rgba(31, 111, 166, 0.35);
+  border-color: #2A7987;
+  box-shadow: 0 0 0 3px rgba(42, 121, 135, 0.35);
 }
 
 .hero-form-input::placeholder {
@@ -505,7 +505,7 @@
 .hero-form-input:-webkit-autofill:focus,
 .hero-form-input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
-  -webkit-text-fill-color: #0b2a47 !important;
+    -webkit-text-fill-color: #2A7987 !important;
   box-shadow: 0 0 0 30px #ffffff inset !important;
   background-color: #ffffff !important;
   background-image: none !important;
@@ -593,8 +593,8 @@ textarea.hero-form-input {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(31, 111, 166, 0.2);
-  border: 1px solid rgba(31, 111, 166, 0.4);
+  background: rgba(42, 121, 135, 0.2);
+  border: 1px solid rgba(42, 121, 135, 0.4);
   color: white;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
@@ -787,8 +787,8 @@ textarea.hero-form-input {
     padding: 0.4rem 0.9rem;
     white-space: nowrap;
     align-items: center;
-    background: rgba(31, 111, 166, 0.2);
-    border: 1px solid rgba(31, 111, 166, 0.4);
+    background: rgba(42, 121, 135, 0.2);
+    border: 1px solid rgba(42, 121, 135, 0.4);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
   }
@@ -1204,7 +1204,7 @@ textarea.hero-form-input {
   .hero-form-input:-webkit-autofill:focus,
   .hero-form-input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
-    -webkit-text-fill-color: #0b2a47 !important;
+    -webkit-text-fill-color: #2A7987 !important;
     box-shadow: 0 0 0 30px #ffffff inset !important;
     background-color: #ffffff !important;
     background-image: none !important;
@@ -1454,8 +1454,8 @@ textarea.hero-form-input {
   align-items: center;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  background: rgba(31, 111, 166, 0.2);
-  border: 1px solid rgba(31, 111, 166, 0.4);
+  background: rgba(42, 121, 135, 0.2);
+  border: 1px solid rgba(42, 121, 135, 0.4);
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -1664,7 +1664,7 @@ textarea.hero-form-input {
 
 .work-gallery-section {
   display: none;
-  background: #0b2a47;
+  background: #8E4F57;
   color: #fff;
   padding: 4.5rem 0 5rem;
 }

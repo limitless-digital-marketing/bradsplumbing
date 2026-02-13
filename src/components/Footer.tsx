@@ -51,32 +51,8 @@ const Footer = () => {
             <h4>OPERATING HOURS</h4>
             <ul className="hours-list">
               <li>
-                <span>Sun:</span>
-                <span>8:00am - 5:00pm</span>
-              </li>
-              <li>
-                <span>Mon:</span>
-                <span>8:00am - 8:00pm</span>
-              </li>
-              <li>
-                <span>Tue:</span>
-                <span>8:00am - 8:00pm</span>
-              </li>
-              <li>
-                <span>Wed:</span>
-                <span>8:00am - 5:00pm</span>
-              </li>
-              <li>
-                <span>Thu:</span>
-                <span>8:00am - 8:00pm</span>
-              </li>
-              <li>
-                <span>Fri:</span>
-                <span>8:00am - 8:00pm</span>
-              </li>
-              <li>
-                <span>Sat:</span>
-                <span>8:00am - 8:00pm</span>
+                <span>Mon - Fri:</span>
+                <span>7:00am - 5:00pm</span>
               </li>
             </ul>
           </div>

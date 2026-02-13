@@ -27,8 +27,8 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  background: rgba(31, 111, 166, 0.2);
-  border: 1px solid rgba(31, 111, 166, 0.4);
+  background: rgba(42, 121, 135, 0.2);
+  border: 1px solid rgba(42, 121, 135, 0.4);
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -131,7 +131,7 @@
 .blog-listing-title {
   font-size: clamp(2.2rem, 3.6vw, 3.1rem);
   font-weight: 900;
-  color: #0b2a47;
+  color: #2A7987;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin: 0;
@@ -190,7 +190,7 @@
 
 .blog-card-body h3 {
   font-size: 1.3rem;
-  color: #0b2a47;
+  color: #2A7987;
   margin: 0;
 }
 

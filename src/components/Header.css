@@ -15,7 +15,7 @@
   background: #081a2b;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(6px);
-  border-bottom: 2px solid #1f6fa6;
+  border-bottom: 2px solid #2A7987;
 }
 
 .header-content {
@@ -213,7 +213,7 @@
 
 .btn-phone {
   background: #fff;
-  color: #4aa3e0;
+  color: #2A7987;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 0.6rem;
   padding: 0.5rem 0.95rem;

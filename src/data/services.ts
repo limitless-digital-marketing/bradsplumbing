@@ -2,6 +2,7 @@ export type ServiceEntry = {
   name: string
   slug: string
   heroSubtitle: string
+  heroImage?: string
   content: string
 }
 
@@ -11,6 +12,7 @@ export const services: ServiceEntry[] = [
     slug: 'renovations',
     heroSubtitle:
       'Plumbing and gasfitting upgrades for bathroom, kitchen, and laundry renovations.',
+    heroImage: '/Images/services.png',
     content:
       'We coordinate pipework changes, fixture installations, and appliance connections to keep your renovation running smoothly.'
   },
@@ -27,6 +29,7 @@ export const services: ServiceEntry[] = [
     slug: 'drain-cleaning',
     heroSubtitle:
       'Clear slow drains and stubborn blockages with safe, effective cleaning.',
+    heroImage: '/Images/blocked-drains.png',
     content:
       'We remove build-up from sinks, showers, and floor wastes to restore flow and reduce future clogs.'
   },
@@ -51,6 +54,7 @@ export const services: ServiceEntry[] = [
     slug: 'pipe-leak-repairs',
     heroSubtitle:
       'Fast diagnosis and repair of leaking or damaged pipes.',
+    heroImage: '/Images/leak-detection.png',
     content:
       'We locate the source of leaks and repair or replace affected pipework to prevent further damage.'
   },
@@ -83,6 +87,7 @@ export const services: ServiceEntry[] = [
     slug: 'water-heaters',
     heroSubtitle:
       'Installation and repairs for electric, gas, and heat pump hot water systems. No solar HWS work.',
+    heroImage: '/Images/water-heaters.png',
     content:
       'We install and repair electric, gas, and heat pump hot water systems to restore reliable hot water. Note: we do not service solar hot water systems.'
   },

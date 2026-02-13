@@ -114,7 +114,7 @@ const HomePage = () => {
               <h1>
                 BRADS
                 <span className="hero-headline-line hero-headline-nowrap">PLUMBING &amp; GASFITTING</span>
-                <span className="hero-headline-line">DOMESTIC MAINTENANCE</span>
+                <span className="hero-headline-line">SERVING VICTORIA</span>
               </h1>
               <p className="hero-description">
                 Plumbing and gasfitting domestic maintenance for all types of dwellings. Renovations, general
@@ -217,7 +217,7 @@ const HomePage = () => {
           <div className="services-grid">
             <Link to="/services/renovations" className="service-grid-card">
               <img
-                src="/Images/services.png"
+                src="/Images/renovation.png"
                 alt="Renovation plumbing"
                 loading="lazy"
               />
@@ -228,21 +228,6 @@ const HomePage = () => {
                   <span className="service-grid-arrow" aria-hidden="true">→</span>
                 </div>
                 <span className="service-grid-desc">Plumbing upgrades for kitchens, bathrooms, and laundries.</span>
-              </div>
-            </Link>
-            <Link to="/services/drain-cleaning" className="service-grid-card">
-              <img
-                src="/Images/blocked-drains.png"
-                alt="Drain cleaning"
-                loading="lazy"
-              />
-              <div className="service-grid-overlay"></div>
-              <div className="service-grid-label">
-                <div className="service-grid-title-row">
-                  <span className="service-grid-title">DRAIN CLEANING</span>
-                  <span className="service-grid-arrow" aria-hidden="true">→</span>
-                </div>
-                <span className="service-grid-desc">Clear slow drains and stubborn blockages.</span>
               </div>
             </Link>
             <Link to="/services/water-heaters" className="service-grid-card">
@@ -258,6 +243,21 @@ const HomePage = () => {
                   <span className="service-grid-arrow" aria-hidden="true">→</span>
                 </div>
                 <span className="service-grid-desc">Electric, gas, and heat pump systems (no solar).</span>
+              </div>
+            </Link>
+            <Link to="/services/drain-cleaning" className="service-grid-card">
+              <img
+                src="/Images/blocked-drains.png"
+                alt="Drain cleaning"
+                loading="lazy"
+              />
+              <div className="service-grid-overlay"></div>
+              <div className="service-grid-label">
+                <div className="service-grid-title-row">
+                  <span className="service-grid-title">DRAIN CLEANING</span>
+                  <span className="service-grid-arrow" aria-hidden="true">→</span>
+                </div>
+                <span className="service-grid-desc">Clear slow drains and stubborn blockages.</span>
               </div>
             </Link>
             <Link to="/services/pipe-leak-repairs" className="service-grid-card">
