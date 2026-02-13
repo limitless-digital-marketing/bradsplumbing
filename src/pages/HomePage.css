@@ -1276,6 +1276,22 @@ textarea.hero-form-input {
     overflow: visible;
   }
 
+  .hero-form-container-quote .form-logo {
+    display: block !important;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .hero-form-card .form-logo {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
   .hero-form {
     width: 100%;
     gap: 1rem;

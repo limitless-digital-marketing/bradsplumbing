@@ -384,6 +384,17 @@
     backdrop-filter: none;
   }
 
+  .logo {
+    display: inline-flex !important;
+    visibility: visible !important;
+  }
+
+  .logo-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
   .nav-item-dropdown:hover .nav-link svg,
   .nav-item-dropdown:focus-within .nav-link svg {
     transform: none;

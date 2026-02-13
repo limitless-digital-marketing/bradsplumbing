@@ -147,6 +147,15 @@
 }
 
 @media (max-width: 768px) {
+  .quote-page-card .form-logo {
+    display: block !important;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
   .quote-page {
     padding: 1.5rem 0;
     overflow: visible;
