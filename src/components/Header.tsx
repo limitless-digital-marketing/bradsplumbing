@@ -140,7 +140,7 @@ const Header = () => {
           <Link to="/" className="logo">
             <img
               src="/Images/brads-plumbing-logo.png"
-              alt="Brads Plumbing & Gasfitting"
+              alt="McKays Plumbing and Gasfitting"
               className="logo-image"
             />
           </Link>

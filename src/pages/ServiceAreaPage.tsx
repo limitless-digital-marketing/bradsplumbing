@@ -36,7 +36,7 @@ const ServiceAreaPage = () => {
         <div className="container service-content-container">
           <h2>Trusted Plumbing Services in {areaName}</h2>
           <p>
-            At Brads Plumbing &amp; Gasfitting, our service in {areaName} focuses on keeping your plumbing and gas
+            At McKays Plumbing and Gasfitting, our service in {areaName} focuses on keeping your plumbing and gas
             systems safe, reliable, and running smoothly. Whether you are dealing with a blockage, leaking pipe, or a
             faulty hot water system, our team delivers efficient, reliable solutions.
           </p>
@@ -48,7 +48,7 @@ const ServiceAreaPage = () => {
           </p>
           <p>
             We also offer preventive maintenance to keep your plumbing running smoothly and to help avoid unexpected
-            issues. Choose Brads Plumbing &amp; Gasfitting in {areaName} for dependable service, tidy workmanship, and
+            issues. Choose McKays Plumbing and Gasfitting in {areaName} for dependable service, tidy workmanship, and
             long-term peace of mind.
           </p>
         </div>

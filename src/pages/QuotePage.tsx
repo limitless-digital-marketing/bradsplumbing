@@ -9,7 +9,7 @@ const QuotePage = () => {
         <div className="quote-page-card hero-form-card">
           <img
             src="/Images/brads-plumbing-logo.png"
-            alt="Brads Plumbing & Gasfitting"
+            alt="McKays Plumbing and Gasfitting"
             className="form-logo"
           />
           <h3 className="hero-form-title">Get A Free Quote</h3>

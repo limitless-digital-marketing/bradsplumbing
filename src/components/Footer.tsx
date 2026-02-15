@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="footer-section footer-brand">
             <div className="footer-logo">
-              <h3>Brads Plumbing &amp; Gasfitting</h3>
+              <h3>McKays Plumbing and Gasfitting</h3>
             </div>
             <p className="footer-tagline">Domestic plumbing and gasfitting maintenance for all types of dwellings.</p>
             <p className="footer-contact-item">
@@ -61,7 +61,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; {new Date().getFullYear()} Brads Plumbing &amp; Gasfitting. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} McKays Plumbing and Gasfitting. All Rights Reserved.</p>
           </div>
         </div>
       </div>

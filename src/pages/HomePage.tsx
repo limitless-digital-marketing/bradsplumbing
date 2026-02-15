@@ -109,12 +109,12 @@ const HomePage = () => {
                   </svg>
                 </span>
                 <span className="hero-badge-text hero-badge-text-desktop">5-Star Reviews</span>
-                <span className="hero-badge-text hero-badge-text-mobile">Victoria Based Plumber</span>
+                <span className="hero-badge-text hero-badge-text-mobile">Queensland Based Plumber</span>
               </div>
               <h1>
-                BRADS
+                MCKAYS
                 <span className="hero-headline-line hero-headline-nowrap">PLUMBING &amp; GASFITTING</span>
-                <span className="hero-headline-line">SERVING VICTORIA</span>
+                <span className="hero-headline-line">SERVING CHUWAR</span>
               </h1>
               <p className="hero-description">
                 Plumbing and gasfitting domestic maintenance for all types of dwellings. Renovations, general
@@ -148,7 +148,7 @@ const HomePage = () => {
               <div className="hero-form-card">
                 <img
                   src="/Images/brads-plumbing-logo.png"
-                  alt="Brads Plumbing & Gasfitting"
+                  alt="McKays Plumbing and Gasfitting"
                   className="form-logo"
                 />
                 <HeroQuoteForm />
@@ -164,7 +164,7 @@ const HomePage = () => {
             <div className="hero-form-card">
               <img
                 src="/Images/brads-plumbing-logo.png"
-                alt="Brads Plumbing & Gasfitting"
+                alt="McKays Plumbing and Gasfitting"
                 className="form-logo"
               />
               <HeroQuoteForm />

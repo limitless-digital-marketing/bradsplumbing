@@ -1,6 +1,6 @@
-# Brads Plumbing & Gasfitting Website
+# McKays Plumbing and Gasfitting Website
 
-A modern, conversion-focused website for Brads Plumbing & Gasfitting.
+A modern, conversion-focused website for McKays Plumbing and Gasfitting.
 
 ## Development
 

@@ -22,7 +22,7 @@ const ReviewsSection = () => {
       name: 'Angie (Rosebud)',
       date: 'Recent',
       rating: 5,
-      text: 'Brad and Tyler were brilliant. They were helpful with every question, went above and beyond, and the communication was great. The service putting in our new tap was prompt and professional. I highly recommend Brads Plumbing. Great job guys and thank you so much.'
+      text: 'McKays Plumbing were brilliant. They were helpful with every question, went above and beyond, and the communication was great. The service putting in our new tap was prompt and professional. I highly recommend McKays Plumbing. Great job guys and thank you so much.'
     },
     {
       id: 2,
@@ -36,21 +36,21 @@ const ReviewsSection = () => {
       name: 'Happy Client',
       date: 'Recent',
       rating: 5,
-      text: 'Brad did an excellent job. He provided great service and offered solutions that saved us a lot of money. Would not hesitate to recommend. Thanks again Brad.'
+      text: 'McKays Plumbing did an excellent job. They provided great service and offered solutions that saved us a lot of money. Would not hesitate to recommend. Thanks again McKays Plumbing.'
     },
     {
       id: 4,
       name: 'Holiday Home Owner',
       date: 'Recent',
       rating: 5,
-      text: 'Holiday home requiring a new hot water system. Owners couldn’t attend to supervise installation. Brads Plumbing & Gasfitting organised everything, including the unit, installation, and other trades. Brad and Jacqui kept me informed throughout. Completely trustworthy.'
+      text: 'Holiday home requiring a new hot water system. Owners couldn’t attend to supervise installation. McKays Plumbing and Gasfitting organised everything, including the unit, installation, and other trades. The team kept me informed throughout. Completely trustworthy.'
     },
     {
       id: 5,
       name: 'Local Resident',
       date: 'Recent',
       rating: 5,
-      text: 'Honest, reliable, and great work ethic. I would highly recommend Brad. If I could give ten stars, I would.'
+      text: 'Honest, reliable, and great work ethic. I would highly recommend McKays Plumbing. If I could give ten stars, I would.'
     },
     {
       id: 6,
@@ -71,14 +71,14 @@ const ReviewsSection = () => {
       name: 'Local Homeowner',
       date: 'Recent',
       rating: 5,
-      text: 'Brad was prompt, tidy, and explained the fix clearly. Great service and would use again.'
+      text: 'McKays Plumbing was prompt, tidy, and explained the fix clearly. Great service and would use again.'
     },
     {
       id: 9,
       name: 'Satisfied Customer',
       date: 'Recent',
       rating: 5,
-      text: 'Quick response, quality workmanship, and fair pricing. Highly recommend Brads Plumbing & Gasfitting.'
+      text: 'Quick response, quality workmanship, and fair pricing. Highly recommend McKays Plumbing and Gasfitting.'
     }
   ]
 
