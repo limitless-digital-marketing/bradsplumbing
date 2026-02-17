@@ -59,6 +59,61 @@ const galleryImages = [
   }
 ]
 
+const heroBenefitPoints = [
+  {
+    id: 1,
+    title: 'Upfront Pricing',
+    subtitle: 'Competitive affordable plumbers',
+    icon: (
+      <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M12 2.5a9.5 9.5 0 1 0 9.5 9.5A9.5 9.5 0 0 0 12 2.5zm1.1 14.4v1h-2.1v-1a3.2 3.2 0 0 1-2.8-2.7l2-.3a1.6 1.6 0 0 0 1.7 1.3c1 0 1.6-.5 1.6-1.2 0-.8-.8-1.1-2-1.5-1.6-.5-3.1-1.1-3.1-3.1 0-1.5 1-2.7 2.6-3V5.3h2.1v1.1a3.1 3.1 0 0 1 2.5 2.4l-2 .3a1.4 1.4 0 0 0-1.5-1.1c-.9 0-1.4.4-1.4 1.1 0 .7.7 1 1.9 1.4 1.7.6 3.3 1.3 3.3 3.3 0 1.7-1.1 2.9-2.8 3.2z"
+        />
+      </svg>
+    )
+  },
+  {
+    id: 2,
+    title: 'Licensed and Insured',
+    subtitle: 'Over 25 years experience',
+    icon: (
+      <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M12 2 4 5v5.8c0 5.2 3.5 10.1 8 11.2 4.5-1.1 8-6 8-11.2V5L12 2zm-1.1 13.1-3-3 1.4-1.4 1.6 1.6 3.9-3.9 1.4 1.4-5.3 5.3z"
+        />
+      </svg>
+    )
+  },
+  {
+    id: 3,
+    title: 'Honest & On Time',
+    subtitle: 'We travel to all areas of Brisbane',
+    icon: (
+      <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="M12 2.5A9.5 9.5 0 1 0 21.5 12 9.5 9.5 0 0 0 12 2.5zm0 17a7.5 7.5 0 1 1 7.5-7.5 7.5 7.5 0 0 1-7.5 7.5zm1-11h-2v4.1l3.5 2.1 1-1.7-2.5-1.5z"
+        />
+      </svg>
+    )
+  },
+  {
+    id: 4,
+    title: 'Same Day Service',
+    subtitle: "Don't wait call us today!",
+    icon: (
+      <svg viewBox="0 0 24 24" className="hero-benefit-icon" aria-hidden="true">
+        <path
+          fill="currentColor"
+          d="m13.2 2-7 11h5.1L10.8 22l7-11h-5.1L13.2 2z"
+        />
+      </svg>
+    )
+  }
+]
+
 const HomePage = () => {
   return (
     <div className="homepage">
@@ -111,10 +166,10 @@ const HomePage = () => {
                 <span className="hero-badge-text hero-badge-text-desktop">5-Star Reviews</span>
               </div>
               <h1>
-                MCKAYS
+                MCKAY’S
                 <span className="hero-headline-line hero-headline-nowrap">PLUMBING &amp; GASFITTING</span>
-                <span className="hero-headline-line">SERVICING IPSWICH, BRISBANE AND SURROUNDS</span>
               </h1>
+              <p className="hero-subheading">Servicing Ipswich, Brisbane and Surrounds</p>
               <p className="hero-description">
                 Domestic plumbing and gasfitting for all types of dwellings, including renovations, drain cleaning,
                 gas piping and bottle connections, cooktops, hot water systems, water filters, septic tanks, and
@@ -147,7 +202,7 @@ const HomePage = () => {
               <div className="hero-form-card">
                 <img
                   src="/Images/brads-plumbing-logo.png"
-                  alt="McKays Plumbing and Gasfitting"
+                  alt="McKay’s Plumbing and Gasfitting"
                   className="form-logo"
                 />
                 <HeroQuoteForm />
@@ -157,13 +212,25 @@ const HomePage = () => {
         </div>
       </section>
 
+      <section className="hero-benefits-strip" aria-label="McKay’s Plumbing and Gasfitting key benefits">
+        <div className="container hero-benefits-strip-container">
+          {heroBenefitPoints.map((benefit) => (
+            <article className="hero-benefit-point" key={benefit.id}>
+              <span className="hero-benefit-icon-wrap">{benefit.icon}</span>
+              <h3>{benefit.title}</h3>
+              <p className="hero-benefit-subtitle">{benefit.subtitle}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="hero-quote-section" id="quote-section">
         <div className="container">
           <div className="hero-form-container hero-form-container-quote">
             <div className="hero-form-card">
               <img
                 src="/Images/brads-plumbing-logo.png"
-                alt="McKays Plumbing and Gasfitting"
+                alt="McKay’s Plumbing and Gasfitting"
                 className="form-logo"
               />
               <HeroQuoteForm />
@@ -187,6 +254,26 @@ const HomePage = () => {
                 pipe and leak repairs, or hot water system work, Brad keeps the process clear and straightforward so you
                 always know what is happening.
               </p>
+              <div className="about-licence-badges">
+                <span className="licence-badge">
+                  <svg className="licence-badge-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M12 2 4 5v5.8c0 5.2 3.5 10.1 8 11.2 4.5-1.1 8-6 8-11.2V5L12 2zm-1.1 13.1-3-3 1.4-1.4 1.6 1.6 3.9-3.9 1.4 1.4-5.3 5.3z"/>
+                  </svg>
+                  <span className="licence-badge-text">
+                    <span className="licence-badge-label">QBCC Licence</span>
+                    <span className="licence-badge-number">15130806</span>
+                  </span>
+                </span>
+                <span className="licence-badge">
+                  <svg className="licence-badge-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill="currentColor" d="M12 2 4 5v5.8c0 5.2 3.5 10.1 8 11.2 4.5-1.1 8-6 8-11.2V5L12 2zm-1.1 13.1-3-3 1.4-1.4 1.6 1.6 3.9-3.9 1.4 1.4-5.3 5.3z"/>
+                  </svg>
+                  <span className="licence-badge-text">
+                    <span className="licence-badge-label">Gas Licence</span>
+                    <span className="licence-badge-number">L93521</span>
+                  </span>
+                </span>
+              </div>
             </div>
             <div className="about-image">
               <img

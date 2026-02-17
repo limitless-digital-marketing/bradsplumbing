@@ -95,7 +95,7 @@
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #2A7987;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }

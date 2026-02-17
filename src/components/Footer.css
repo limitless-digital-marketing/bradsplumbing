@@ -48,11 +48,49 @@
   color: white;
 }
 
-.footer-license {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.85rem;
+.footer-licence-badges {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
   margin-top: var(--spacing-sm);
+}
+
+.footer-licence-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 0.4rem 0.7rem;
+}
+
+.footer-licence-badge-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--primary-light);
+  flex-shrink: 0;
+}
+
+.footer-licence-badge-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.footer-licence-badge-label {
+  font-size: 0.55rem;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-licence-badge-number {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.02em;
 }
 
 /* Social Icons */

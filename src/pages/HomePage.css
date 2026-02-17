@@ -33,6 +33,110 @@
   z-index: -1;
 }
 
+.hero-benefits-strip {
+  display: block;
+  background: #081A2B;
+  padding: 2rem 1rem;
+}
+
+.hero-benefits-strip-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 1rem;
+  max-width: 1120px;
+  padding: 0;
+  align-items: start;
+}
+
+.hero-benefit-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  padding: 0;
+}
+
+.hero-benefit-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+}
+
+.hero-benefit-icon {
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+
+.hero-benefit-point h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.hero-benefit-subtitle {
+  margin: 0;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+@media (min-width: 900px) {
+  .hero-benefits-strip {
+    padding: 1.5rem 0;
+  }
+
+  .hero-benefits-strip-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .hero-benefit-point {
+    gap: 0.55rem;
+    padding: 0.2rem 0.9rem 0.25rem;
+  }
+
+  .hero-benefit-icon-wrap {
+    width: 56px;
+    height: 56px;
+  }
+
+  .hero-benefit-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-benefit-point h3 {
+    font-size: clamp(1rem, 1.05vw, 1.12rem);
+    white-space: nowrap;
+  }
+
+  .hero-benefit-subtitle {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1180px) {
+  .hero-benefit-point {
+    padding: 0.1rem 0.65rem 0.2rem;
+  }
+
+  .hero-benefit-point h3 {
+    white-space: normal;
+  }
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -66,6 +170,17 @@
 
 .hero-headline-line {
   display: block;
+}
+
+.hero-subheading {
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.25rem;
+  line-height: 1.3;
 }
 
 .hero-headline-nowrap {
@@ -108,19 +223,32 @@
     backdrop-filter: blur(4px);
   }
 
+  .hero-badge-text {
+    font-size: 2.3rem;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .hero-badge-stars {
     display: none;
   }
 
   .hero h1 {
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-subheading {
+    margin: 0 0 0.75rem;
   }
 
   .hero-description {
     margin-left: 0;
     margin-right: 0;
     font-size: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
     text-align: left;
   }
 
@@ -188,8 +316,15 @@
   .hero-cta-button {
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 0.5rem;
+  }
+
+  .hero-cta-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1322,7 +1457,7 @@ textarea.hero-form-input {
 .about-developer {
   background: #081a2b;
   color: #f5f6fb;
-  padding: 4.5rem 0;
+  padding: 1.75rem 0 4rem;
 }
 
 .about-developer-container {
@@ -1396,6 +1531,51 @@ textarea.hero-form-input {
   line-height: 1.8;
   color: rgba(245, 246, 251, 0.88);
   max-width: 520px;
+}
+
+.about-licence-badges {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.licence-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem 0.85rem;
+}
+
+.licence-badge-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--primary-light);
+  flex-shrink: 0;
+}
+
+.licence-badge-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.licence-badge-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.licence-badge-number {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.03em;
 }
 
 .about-social-row {
@@ -1839,6 +2019,7 @@ textarea.hero-form-input {
   .about-text p {
     max-width: 100%;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1870,6 +2051,7 @@ textarea.hero-form-input {
   .about-social-row {
     gap: 1rem;
   }
+
 }
 
 .trust-badges-row {

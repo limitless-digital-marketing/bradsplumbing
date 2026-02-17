@@ -52,7 +52,7 @@ const ServiceDetailPage = () => {
             and clear communication at every step.
           </p>
           <p>
-            From quick fixes to more involved solutions, McKays Plumbing and Gasfitting tailors every{' '}
+            From quick fixes to more involved solutions, McKay’s Plumbing and Gasfitting tailors every{' '}
             {service.name.toLowerCase()} job to the needs of your property. If you are unsure what is causing the
             problem, we will diagnose it and
             provide honest recommendations so you can make the right call with confidence.

@@ -339,7 +339,7 @@ const BlogPage = () => {
           <div className="blog-hero-tag">Blog</div>
           <h1 className="blog-hero-title">Plumbing Tips & Updates</h1>
           <p className="blog-hero-subtitle">
-            Practical advice from the McKays Plumbing and Gasfitting team to help homes stay safe, efficient, and leak
+            Practical advice from the McKay’s Plumbing and Gasfitting team to help homes stay safe, efficient, and leak
             free.
           </p>
           <a

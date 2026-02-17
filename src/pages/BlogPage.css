@@ -131,7 +131,7 @@
 .blog-listing-title {
   font-size: clamp(2.2rem, 3.6vw, 3.1rem);
   font-weight: 900;
-  color: #2A7987;
+  color: #000;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin: 0;
@@ -190,7 +190,7 @@
 
 .blog-card-body h3 {
   font-size: 1.3rem;
-  color: #2A7987;
+  color: #000;
   margin: 0;
 }
 

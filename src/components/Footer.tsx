@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="footer-section footer-brand">
             <div className="footer-logo">
-              <h3>McKays Plumbing and Gasfitting</h3>
+              <h3>McKay’s Plumbing and Gasfitting</h3>
             </div>
             <p className="footer-tagline">Domestic plumbing and gasfitting maintenance for all types of dwellings.</p>
             <p className="footer-contact-item">
@@ -20,6 +20,26 @@ const Footer = () => {
             <p className="footer-contact-item">
               <a href="mailto:bmplumb@bigpond.com">bmplumb@bigpond.com</a>
             </p>
+            <div className="footer-licence-badges">
+              <span className="footer-licence-badge">
+                <svg className="footer-licence-badge-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M12 2 4 5v5.8c0 5.2 3.5 10.1 8 11.2 4.5-1.1 8-6 8-11.2V5L12 2zm-1.1 13.1-3-3 1.4-1.4 1.6 1.6 3.9-3.9 1.4 1.4-5.3 5.3z"/>
+                </svg>
+                <span className="footer-licence-badge-text">
+                  <span className="footer-licence-badge-label">QBCC Licence</span>
+                  <span className="footer-licence-badge-number">15130806</span>
+                </span>
+              </span>
+              <span className="footer-licence-badge">
+                <svg className="footer-licence-badge-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="currentColor" d="M12 2 4 5v5.8c0 5.2 3.5 10.1 8 11.2 4.5-1.1 8-6 8-11.2V5L12 2zm-1.1 13.1-3-3 1.4-1.4 1.6 1.6 3.9-3.9 1.4 1.4-5.3 5.3z"/>
+                </svg>
+                <span className="footer-licence-badge-text">
+                  <span className="footer-licence-badge-label">Gas Licence</span>
+                  <span className="footer-licence-badge-number">L93521</span>
+                </span>
+              </span>
+            </div>
           </div>
 
           {/* Our Services */}
@@ -61,7 +81,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; {new Date().getFullYear()} McKays Plumbing and Gasfitting. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} McKay’s Plumbing and Gasfitting. All Rights Reserved.</p>
           </div>
         </div>
       </div>
