@@ -109,17 +109,16 @@ const HomePage = () => {
                   </svg>
                 </span>
                 <span className="hero-badge-text hero-badge-text-desktop">5-Star Reviews</span>
-                <span className="hero-badge-text hero-badge-text-mobile">Queensland Based Plumber</span>
               </div>
               <h1>
                 MCKAYS
                 <span className="hero-headline-line hero-headline-nowrap">PLUMBING &amp; GASFITTING</span>
-                <span className="hero-headline-line">SERVING CHUWAR</span>
+                <span className="hero-headline-line">SERVICING IPSWICH, BRISBANE AND SURROUNDS</span>
               </h1>
               <p className="hero-description">
-                Plumbing and gasfitting domestic maintenance for all types of dwellings. Renovations, general
-                maintenance, drain cleaning, tap and toilet repairs, leak fixes, and electric, gas, and heat pump hot
-                water systems.
+                Domestic plumbing and gasfitting for all types of dwellings, including renovations, drain cleaning,
+                gas piping and bottle connections, cooktops, hot water systems, water filters, septic tanks, and
+                general maintenance repairs.
               </p>
               <div className="hero-mobile-cta">
                 <a
@@ -242,7 +241,7 @@ const HomePage = () => {
                   <span className="service-grid-title">WATER HEATERS</span>
                   <span className="service-grid-arrow" aria-hidden="true">→</span>
                 </div>
-                <span className="service-grid-desc">Electric, gas, and heat pump systems (no solar).</span>
+                <span className="service-grid-desc">Electric, gas, and heat pump hot water systems.</span>
               </div>
             </Link>
             <Link to="/services/drain-cleaning" className="service-grid-card">

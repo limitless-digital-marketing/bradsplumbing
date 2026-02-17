@@ -42,7 +42,7 @@ const ServiceAreaPage = () => {
           </p>
           <p>
             We handle drain cleaning, pipe and leak repairs, tap and toilet work, shower fixes, and hot water system
-            installation and repairs (electric, gas, and heat pump only). We use quality parts and proven techniques to
+            installation and repairs (electric, gas, and heat pump). We use quality parts and proven techniques to
             ensure lasting results, and we keep you informed with clear options and upfront pricing before any work
             begins.
           </p>

@@ -30,7 +30,7 @@ const EmergencyPlumbingPage = () => {
           </p>
           <p>
             We also install and repair electric, gas, and heat pump hot water systems, along with storm water repairs
-            and installations. Note: we do not service solar hot water systems.
+            and installations.
           </p>
         </div>
       </section>

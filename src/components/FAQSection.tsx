@@ -24,7 +24,7 @@ const FAQSection = () => {
     {
       id: 3,
       question: 'What hot water systems do you service?',
-      answer: 'We install and repair electric, gas, and heat pump hot water systems. We do not service solar hot water systems.'
+      answer: 'We install and repair electric, gas, and heat pump hot water systems.'
     },
     {
       id: 4,

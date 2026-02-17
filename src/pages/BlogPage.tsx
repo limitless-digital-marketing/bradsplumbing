@@ -262,7 +262,7 @@ export const posts = [
     title: 'Hot Water Systems: Electric, Gas, and Heat Pump Repairs',
     date: 'November 26, 2025',
     excerpt:
-      'What causes hot water failures and how repairs or replacements are handled. No solar systems.',
+      'What causes hot water failures and how repairs or replacements are handled.',
     image:
       'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200',
     sections: [
@@ -284,7 +284,7 @@ export const posts = [
       {
         heading: 'System Types We Service',
         body:
-          'We install and repair electric, gas, and heat pump hot water systems. Note: we do not service solar hot water systems.'
+          'We install and repair electric, gas, and heat pump hot water systems.'
       },
       {
         heading: 'Conclusion: Get Hot Water Back Fast',

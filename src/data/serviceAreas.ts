@@ -1,6 +1,7 @@
 export const serviceAreas = [
   { name: 'Chuwar', slug: 'chuwar' },
   { name: 'Ipswich', slug: 'ipswich' },
+  { name: 'Brisbane', slug: 'brisbane' },
   { name: 'Karalee', slug: 'karalee' },
   { name: 'Karana Downs', slug: 'karana-downs' },
   { name: 'Mount Crosby', slug: 'mount-crosby' },
@@ -13,6 +14,5 @@ export const serviceAreas = [
   { name: 'Yamanto', slug: 'yamanto' },
   { name: 'Flinders View', slug: 'flinders-view' },
   { name: 'Redbank', slug: 'redbank' },
-  { name: 'Redbank Plains', slug: 'redbank-plains' },
-  { name: 'Springfield', slug: 'springfield' }
+  { name: 'Redbank Plains', slug: 'redbank-plains' }
 ]

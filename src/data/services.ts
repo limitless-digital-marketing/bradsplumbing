@@ -83,13 +83,37 @@ export const services: ServiceEntry[] = [
       'We handle supply, installation, and repairs for toilets to keep your bathroom reliable and efficient.'
   },
   {
+    name: 'Gasfitting (Natural Gas & LPG)',
+    slug: 'gasfitting-natural-gas-lpg',
+    heroSubtitle:
+      'Natural gas and LPG gasfitting across all service areas, including piping, bottle connections, cooktops, and hot water systems.',
+    content:
+      'We provide compliant gasfitting for natural gas and LPG systems, including new installations, replacements, and repairs for pipes, bottles, cooktops, and hot water services.'
+  },
+  {
+    name: 'Water Filters',
+    slug: 'water-filters',
+    heroSubtitle:
+      'Water filter installation, replacements, and maintenance for cleaner, better-tasting water.',
+    content:
+      'We install and service household water filtration systems, including under-sink and point-of-entry options, to improve water quality and day-to-day reliability.'
+  },
+  {
+    name: 'Septic Tanks',
+    slug: 'septic-tanks',
+    heroSubtitle:
+      'Septic tank plumbing support, including pipework, repairs, and system maintenance.',
+    content:
+      'We handle septic-related plumbing work, including tank connections, pipe repairs, and maintenance to help keep your wastewater system operating safely and efficiently.'
+  },
+  {
     name: 'Water Heaters (Electric, Gas & Heat Pump)',
     slug: 'water-heaters',
     heroSubtitle:
-      'Installation and repairs for electric, gas, and heat pump hot water systems. No solar HWS work.',
+      'Installation and repairs for electric, gas, and heat pump hot water systems.',
     heroImage: '/Images/water-heaters.png',
     content:
-      'We install and repair electric, gas, and heat pump hot water systems to restore reliable hot water. Note: we do not service solar hot water systems.'
+      'We install and repair electric, gas, and heat pump hot water systems to restore reliable hot water.'
   },
   {
     name: 'Storm Water Repair & Installation',
